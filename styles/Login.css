@@ -1,0 +1,16 @@
+@font-face {
+    src: url('/font/LeagueSpartan-Bold.otf');
+    font-family:myfont;
+}
+
+#password{
+    background: rgb(240, 242, 245) !important;
+}
+
+.ant-form-item{
+    margin: 0 !important;
+}
+
+#font {
+    font-family: myfont !important;
+}
