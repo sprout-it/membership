@@ -8,17 +8,17 @@ const Verification = () => {
     const handleChange = (otp) => setOtp(otp);
     return (
         <Row justify='center'>
-            <Col xs={0} sm={0} md={0} lg={0} xl={12} xxl={12} >
+            <Col xs={0} sm={0} md={0} lg={0} xl={11} xxl={12} >
                 <Row justify='center' align='middle' style={{ minHeight: '100vh' }}>
                     <img src="/images/verification-logo.svg" alt="verification-logo" width={500} height={500} />
                 </Row>
             </Col>
-            <Col xs={24} sm={24} md={24} lg={24} xl={12} xxl={12}>
+            <Col xs={24} sm={24} md={24} lg={24} xl={13} xxl={12}>
                 <Card style={{ padding: 10, minHeight: '100vh' }}>
                     <Row justify='center' align='middle' style={{ minHeight: '100vh' }}>
-                        <Col xs={24} sm={22} md={18} lg={16} xl={16} xxl={12} >
+                        <Col xs={24} sm={22} md={18} lg={16} xl={18} xxl={10} >
                             <Row justify='center'>
-                                <Typography.Title>ENTER VERIFICATION CODE</Typography.Title>
+                                <Typography.Title style={{fontSize:'40px'}}>ENTER VERIFICATION CODE</Typography.Title>
                             </Row>
                             <Row justify='center'>
                                 <Typography.Paragraph>Enter OTP</Typography.Paragraph>

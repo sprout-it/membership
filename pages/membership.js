@@ -1,0 +1,136 @@
+import React, { useState, useEffect } from 'react'
+import { Tabs, Card, Row, Col } from 'antd'
+
+const Membership = () => {
+    const { TabPane } = Tabs;
+    const callback = (key) => {
+        console.log(key);
+    }
+    return (
+        <Row justify='center' align='middle' style={{ backgroundColor: 'white', paddingTop: 80 }}>
+            <Col span={20} style={{ border: '1px solid blcak' }}>
+                <Tabs onChange={callback} type="card">
+                    <TabPane tab="Tab 1" key="1">
+                        <Row justify='start' gutter={[5,40]}>
+                            <Col span={8}>
+                                <Card size="small" title="Free" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content1.1</p>
+                                    <p>Card content1.1</p>
+                                    <p>Card content1.1</p>
+                                </Card>
+                            </Col>
+                            <Col span={8}>
+                                <Card size="small" title="3000" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content1.2</p>
+                                    <p>Card content1.2</p>
+                                    <p>Card content1.2</p>
+                                </Card>
+                            </Col>
+                            <Col span={8}>
+                                <Card size="small" title="6000" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content1.3</p>
+                                    <p>Card content1.3</p>
+                                    <p>Card content1.3</p>
+                                </Card>
+                            </Col>
+                            <Col span={8}>
+                                <Card size="small" title="9000" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content1.4</p>
+                                    <p>Card content1.4</p>
+                                    <p>Card content1.4</p>
+                                </Card>
+                            </Col>
+                            <Col span={8}>
+                                <Card size="small" title="12000" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content1.5</p>
+                                    <p>Card content1.5</p>
+                                    <p>Card content1.5</p>
+                                </Card>
+                            </Col>
+                        </Row>
+                    </TabPane>
+                    <TabPane tab="Tab 2" key="2">
+                    <Row justify='start' gutter={[5,40]}>
+                            <Col span={8}>
+                                <Card size="small" title="Free" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content2.1</p>
+                                    <p>Card content2.1</p>
+                                    <p>Card content2.1</p>
+                                </Card>
+                            </Col>
+                            <Col span={8}>
+                                <Card size="small" title="3000" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content2.2</p>
+                                    <p>Card content2.2</p>
+                                    <p>Card content2.2</p>
+                                </Card>
+                            </Col>
+                            <Col span={8}>
+                                <Card size="small" title="6000" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content2.3</p>
+                                    <p>Card content2.3</p>
+                                    <p>Card content2.3</p>
+                                </Card>
+                            </Col>
+                            <Col span={8}>
+                                <Card size="small" title="9000" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content2.4</p>
+                                    <p>Card content2.4</p>
+                                    <p>Card content2.4</p>
+                                </Card>
+                            </Col>
+                            <Col span={8}>
+                                <Card size="small" title="12000" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content2.5</p>
+                                    <p>Card content2.5</p>
+                                    <p>Card content2.5</p>
+                                </Card>
+                            </Col>
+                        </Row>
+                    </TabPane>
+                    <TabPane tab="Tab 3" key="3">
+                    <Row justify='start' gutter={[5,40]}>
+                            <Col span={8}>
+                                <Card size="small" title="Free" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content3.1</p>
+                                    <p>Card content3.1</p>
+                                    <p>Card content3.1</p>
+                                </Card>
+                            </Col>
+                            <Col span={8}>
+                                <Card size="small" title="3000" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content3.2</p>
+                                    <p>Card content3.2</p>
+                                    <p>Card content3.2</p>
+                                </Card>
+                            </Col>
+                            <Col span={8}>
+                                <Card size="small" title="6000" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content3.3</p>
+                                    <p>Card content3.3</p>
+                                    <p>Card content3.3</p>
+                                </Card>
+                            </Col>
+                            <Col span={8}>
+                                <Card size="small" title="9000" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content3.4</p>
+                                    <p>Card content3.4</p>
+                                    <p>Card content3.4</p>
+                                </Card>
+                            </Col>
+                            <Col span={8}>
+                                <Card size="small" title="12000" extra={<a href="#">More</a>} style={{ width: 300 }}>
+                                    <p>Card content3.5</p>
+                                    <p>Card content3.5</p>
+                                    <p>Card content3.5</p>
+                                </Card>
+                            </Col>
+                        </Row>
+                    </TabPane>
+                </Tabs>
+            </Col>
+        </Row>
+    )
+}
+
+export default Membership
