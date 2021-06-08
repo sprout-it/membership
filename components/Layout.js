@@ -14,12 +14,13 @@ const LayoutComponent = ({ children }) => {
     // const { t, lang } = useTranslation()
 
     return (
-        <Layout className="layout" style={{ minHeight: '100vh', padding: 0, margin: 0, background: '#fff', width: '100%' }}>
+        <Layout className="navbar-layout" >
             <Row align='middle'>
-                <Col xs={0} sm={0} md={{ span: 8 }} xl={{ span: 8 }} xxl={{ span: 7, offset: 1 }}>
-                    <Row justify='center' align='middle' style={{ padding: 10 }} gutter={5}>
+                <Col xs={7} sm={7} md={{ span: 10,offset:1 }} xl={{ span: 8 }} xxl={{ span: 7, offset: 1 }}>
+                    <Row justify='center' align='middle' gutter={5}>
                         <Col>
                             <img
+                                className="logo-img"
                                 src="/icons/sprout.svg"
                                 alt="sprout"
                                 width='50%'
@@ -28,21 +29,21 @@ const LayoutComponent = ({ children }) => {
                         </Col>
                     </Row>
                 </Col>
-                <Col xs={{ span: 19, offset: 2 }} sm={{ span: 19, offset: 2 }} md={{ span: 12, offset: 2 }} xl={{ span: 10, offset: 4 }} xxl={{ span: 7, offset: 5 }} >
-                    <Row justify='end' align='bottom' wrap={false}>
-                        <Button style={{ borderRadius: 50, margin: 5 }} type='ghost'>Sign In</Button>
-                        <Link href='/account'><Button className='signup-button' style={{ borderRadius: 50,border:0, margin: 5, background: '#35b729' }} type='primary'>Sign UP</Button></Link>
+                <Col xs={{ span: 16 }} sm={{ span: 16 }} md={{ span: 10, offset: 2 }} xl={{ span: 10, offset: 4 }} xxl={{ span: 7, offset: 5 }} >
+                    <Row justify='end' align='middle' wrap={false}>
+                        <Link href='/login'><Button className='login-button' type='ghost'>Sign In</Button></Link>
+                        <Link href='/register'><Button className='signup-button'  type='primary'>Sign UP</Button></Link>
                     </Row>
                 </Col>
             </Row>
-            <Header style={{ padding: 0, margin: 0, width: '100%',height:90 }}>
-                <nav>
+            <Header className="header">
+                <nav className="navbar">
                     <input type="checkbox" id="check" />
                     <label htmlFor="check" className="checkbtn">
                         <FontAwesomeIcon icon={faBars} color='#ffffff'></FontAwesomeIcon>
                     </label>
-                    <ul className='navbar-menu' style={{ marginRight: 110 }}>
-                        <li><Link href='/'><a className='active'>home</a></Link></li>
+                    <ul className='navbar-menu'>
+                        <li className="test"><Link href='/'><a className='active'>home</a></Link></li>
                         <li><Link href='/membership'><a className='active'>membership</a></Link></li>
                         <li><Link href='/mybag'><a className='active'>logistic</a></Link></li>
                     </ul>

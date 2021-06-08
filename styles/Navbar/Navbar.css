@@ -1,0 +1,125 @@
+.navbar-layout{
+    min-height: 100vh!important; 
+    padding: 0!important; 
+    margin: 0!important; 
+    background: #fff!important;
+    max-width: 100%!important;
+  }
+  
+  .header{
+    padding: 0!important;
+    margin: 0!important;
+    max-width: 100%!important;
+    height: 50px!important;
+  }
+
+  .login-button{
+    border-radius: 50px!important;
+    margin: 5px!important;
+  }
+
+  .signup-button{
+    border-radius:50px!important; 
+    border: 0!important; 
+    margin: 5px!important; 
+    background: #35b729!important;
+  }
+  
+  nav{
+    background: #35b729;
+    height: 80px;
+    width: 100%;
+  }
+  
+  .logo-img{
+    color:white;
+    font-size: 35px;
+    list-style: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right:20px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: -5px 0px 0px 0px;
+    padding-right: 25px;
+  }
+  
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  
+  a.active,a:hover{
+    background: #35b729;
+    transition: .5s;
+  }
+  
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  
+  @media only screen and  (max-width: 952px){
+    label.logo{
+      padding-left: 50px;
+      font-size: 30px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media only screen and (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+      top: 8rem;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 1;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+      color: black;
+      border-bottom-style: solid;
+      border-bottom-color: #000;
+      border-bottom-width: 1px;
+    }
+    nav ul li:hover{
+     opacity: 0.5;
+    }
+    a:hover,a.active{
+      background: none;
+      color: black;
+   
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }

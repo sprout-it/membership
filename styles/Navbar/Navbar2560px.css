@@ -1,0 +1,6 @@
+@media only screen and (max-width:2560px) and (min-width:1921px){
+    .active:hover{
+        opacity: 0.5 !important;
+        color: black!important;
+    }
+}
