@@ -1,0 +1,57 @@
+@media  (max-width:426px) {
+    .navbar-layout{
+        padding: 0!important;
+    }
+    .ant-layout-content{
+        margin-top: 0px!important;
+    }
+    .ant-row{
+        height: 50px!important;
+    }
+    .logo-img{
+        padding:5px 0px 5px 10px!important;
+        width: 100%!important;
+    }
+    nav ul li a{
+        font-size: 16px!important;
+    }
+    li{
+          padding: 0!important;
+    }
+    .navbar-menu{
+          margin-top: -29px!important;
+          padding: 0!important;
+    }
+    .navbar{
+        height: 100%!important;
+    }
+
+    .checkbtn{
+        line-height: 50px!important;
+        margin-right: 35px!important;
+    }
+    .active:hover{
+        opacity: 0.5 !important;
+        color: black!important;
+    }
+    .login-button{
+        border-radius: 50px!important;
+        margin: 5px!important;
+        width: 30%!important;
+        height: 30px!important; 
+        font-size: 16px!important;
+      }
+     .navbar{
+        height: 100%!important;
+    }
+      .signup-button{
+        border-radius:50px!important; 
+        border: 0!important; 
+        margin: 5px!important; 
+        background: #35b729!important;
+        width: 30%!important;
+        height: 30px!important; 
+        font-size: 16px!important;
+        align-items: center!important;
+      }
+}

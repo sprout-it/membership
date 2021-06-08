@@ -1,0 +1,41 @@
+@media only screen and (max-width:1024px) and (min-width:769px){
+    .logo-img{
+        padding:5px 0px 5px 10px!important;
+        width: 70%!important;
+    }
+    .login-button{
+        border-radius: 50px!important;
+        margin: 5px!important;
+        width: 30%!important;
+        height: 40px!important; 
+        font-size: 20px!important;
+      }
+    
+      .signup-button{
+        border-radius:50px!important; 
+        border: 0!important; 
+        margin: 5px!important; 
+        background: #35b729!important;
+        width: 30%!important;
+        height: 40px!important; 
+        font-size: 20px!important;
+      }
+      .header{
+        padding: 0!important;
+        margin: 0!important;
+        max-width: 100%!important;
+        height: 90px!important;
+      }
+      .checkbtn{
+        line-height: 65px!important;
+        margin-right: 55px!important;
+    }
+    .active:hover{
+      opacity: 0.5 !important;
+      color: black!important;
+  }
+  .checkbtn{
+    line-height: 50px!important;
+    margin-right: 50px!important;
+}
+}
