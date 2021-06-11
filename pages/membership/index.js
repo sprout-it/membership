@@ -34,11 +34,9 @@ const Membership = () => {
                         <Row justify='start' gutter={[5, 40]}>
                             <Col span={8}>
                                 <Card size="small" title="Free" extra={<a href="#">More</a>} style={{ width: '100%' }}>
-                                    {membership.map((item, key) => {
-                                       return item.package.map((data,i)=>{
-                                            return <Typography.Paragraph key={i}>{data}</Typography.Paragraph>
-                                        })
-                                    })}
+                                    <p>Card content1.1</p>
+                                    <p>Card content1.1</p>
+                                    <p>Card content1.1   </p>
                                 </Card>
                             </Col>
                             <Col span={8}>
