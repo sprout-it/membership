@@ -7,11 +7,11 @@ import Videos from 'components/index/Videos'
 
 const Index = () => {
   return <Row justify='center' align='middle' style={{ padding: -10 }}>
-    <SlideShow />
+    {/* <SlideShow />
     <Our />
     <ArticleAndRegisterAE />
     <Covid />
-    <Videos />
+    <Videos /> */}
   </Row>
 
 }

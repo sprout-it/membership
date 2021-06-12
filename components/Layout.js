@@ -49,16 +49,16 @@ const LayoutComponent = ({ children }) => {
             <Content style={{ padding: 0, marginTop: -22 }}>
                 {children}
             </Content>
-            <Footer style={{ paddingTop: 60, paddingBottom: 30, margin: 0, backgroundColor: "white" }}>
+            <Footer style={{ margin: 0, backgroundColor: "#35b729" }}>
+                <Row justify='center' style={{ color: '#fff' }}>
+                    <Col xs={0} sm={0} md={24} lg={24} xl={24} xxl={24}>
+                        <Row justify='center' >
+                            {/* <Typography.Text style={{ fontFamily: 'Sukhumvit Set', color: '#fff', fontSize: 18 }}> All rights reserved. Copyright © 2021 Sprout Co., Ltd.</Typography.Text> */}
+                            <FooterComponent />
+                        </Row>
+                    </Col>
+                </Row>
             </Footer>
-            <Row justify='center' style={{ padding: 5, background: '#35b729', color: '#fff' }}>
-                <Col xs={0} sm={0} md={24} lg={24} xl={24} xxl={24}>
-                    <Row justify='center' >
-                        {/* <Typography.Text style={{ fontFamily: 'Sukhumvit Set', color: '#fff', fontSize: 18 }}> All rights reserved. Copyright © 2021 Sprout Co., Ltd.</Typography.Text> */}
-                        <FooterComponent />
-                    </Row>
-                </Col>
-            </Row>
         </Layout >
     )
 }

@@ -1,7 +1,7 @@
 import { Row, Col } from "antd"
 
 const FooterComponent = () => {
-    return <Row justify='center' align='middle'>
+    return <Row justify='center' align='middle' style={{ width: '100%', height: '100%' }}>
         <Col span={24} span={24}>
             Contact Information
         </Col>
