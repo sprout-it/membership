@@ -41,7 +41,7 @@ const Membership = () => {
                         <Row justify='start' gutter={[20, 20]} wrap={true}>
                             {
                                 ['Free / 6 เดือน', '3000', '6000', '9000', '12000'].map(item =>
-                                    <Col span={5}>
+                                    <Col key={item} span={5}>
                                         <MembershipCard price={item} />
                                     </Col>
                                 )
