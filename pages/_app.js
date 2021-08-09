@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import '../styles/Login.css'
-import '../styles/Vertify.css'
+import '../styles/Login/Login.css'
+import '../styles/Vertify/Vertify.css'
 import '../styles/Navbar/Navbar.css'
 import '../styles/Navbar/Navbar425px.css'
 import '../styles/Navbar/Navbar768px.css'

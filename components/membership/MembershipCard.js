@@ -1,6 +1,7 @@
 import { Card, Row, Col } from 'antd'
 import { Button } from 'antd/lib/radio'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const MembershipCard = ({ price }) => {
     return <>
@@ -10,21 +11,21 @@ const MembershipCard = ({ price }) => {
                 <Image src='/icons/draw-check-mark.svg' className="check-icon" width={15} height={15} alt="check" /> IT
             </Col>
             <Col span={24}>
-                <Image src='/icons/draw-check-mark.svg' className="check-icon" width={15} height={15} alt="check" /> Financial
-            </Col>
-            <Col span={24}>
                 <Image src='/icons/draw-check-mark.svg' className="check-icon" width={15} height={15} alt="check" /> Marketing
             </Col>
             <Col span={24}>
+                <Image src='/icons/draw-check-mark.svg' className="check-icon" width={15} height={15} alt="check" /> Financial
+            </Col>
+            <Col span={24}>
                 <Row justify='end'>
-                    อ่านรายละเอียดเพิ่มเติม
+                <Link href='/membership/detail'>อ่านรายละเอียดเพิ่มเติม</Link>
                 </Row>
             </Col>
             <Col span={24}>
                 <Row justify='center'>
-                    <button className="package-select-btn">
+                    <Button className="package-select-btn">
                         เลือกแพ็คเก็จ
-                    </button>
+                    </Button>
                 </Row>
             </Col>
         </Card >
