@@ -6,6 +6,7 @@ const Login = () => {
 
     return (
         <Row justify='center'>
+            
             <Col xs={0} sm={0} md={0} lg={0} xl={12} xxl={12}>
                 <Row justify='center' align='middle' style={{ minHeight: '100vh' }}>
                     <img src="/images/key-logo.svg" alt="key-logo" width={500} height={500} />
