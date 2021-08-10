@@ -10,7 +10,7 @@
     padding: 0!important;
     margin: 0!important;
     max-width: 100%!important;
-    height: 50px!important;
+    height: 70px!important;
   }
 
   .login-button{
@@ -27,7 +27,7 @@
   
   nav{
     background: #35b729;
-    height: 80px;
+    height: 100%;
     width: 100%;
   }
   

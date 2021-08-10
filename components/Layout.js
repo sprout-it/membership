@@ -39,10 +39,11 @@ const LayoutComponent = ({ children }) => {
                         <FontAwesomeIcon icon={faBars} color='#ffffff'></FontAwesomeIcon>
                     </label>
                     <ul className='navbar-menu'>
-                        <li className="test"><Link href='/'><a className='active'>home</a></Link></li>
-                        <li><Link href='/membership'><a className='active'>membership</a></Link></li>
-                        <li><Link href='/logistic'><a className='active'>logistic</a></Link></li>
+                        <li className="test"><Link href='/'><a className='active'>Home</a></Link></li>
+                        <li><Link href='/marketing'><a className='active'>Marketing</a></Link></li>
+                        <li><Link href='/logistic'><a className='active'>Logistic</a></Link></li>
                         <li><Link href='/it'><a className='active'>IT</a></Link></li>
+                        <li><Link href='/financial'><a className='active'>Financial</a></Link></li>
                     </ul>
                 </nav>
             </Header>
