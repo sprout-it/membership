@@ -10,8 +10,9 @@ const { Header, Content, Footer } = Layout;
 const LayoutComponent = ({ children }) => {
 
     return (
-        <Layout className="navbar-layout" >
+        <Layout className="navbar-layout">
             <Row align='middle'>
+
                 <Col xs={7} sm={7} md={{ span: 10, offset: 1 }} xl={{ span: 8 }} xxl={{ span: 7, offset: 1 }}>
                     <Row justify='center' align='middle' gutter={5}>
                         <Col>
@@ -25,13 +26,16 @@ const LayoutComponent = ({ children }) => {
                         </Col>
                     </Row>
                 </Col>
+
                 <Col xs={{ span: 16 }} sm={{ span: 16 }} md={{ span: 10, offset: 2 }} xl={{ span: 10, offset: 4 }} xxl={{ span: 7, offset: 5 }} >
                     <Row justify='end' align='middle' wrap={false}>
                         <Link href='/login'><Button className='login-button' type='ghost'>Sign In</Button></Link>
-                        <Link href='/register'><Button className='signup-button' type='primary'>Sign UP</Button></Link>
+                        <Link href='/register'><Button className='signup-button' type='primary'>Sign Up</Button></Link>
                     </Row>
                 </Col>
+
             </Row>
+
             <Header className="header">
                 <nav className="navbar">
                     <input type="checkbox" id="check" />
@@ -47,9 +51,11 @@ const LayoutComponent = ({ children }) => {
                     </ul>
                 </nav>
             </Header>
-            <Content style={{ padding: 0, marginTop: -22 }}>
+
+            <Content style={{ background: '#f7f7f7' }}>
                 {children}
             </Content>
+
             <Footer style={{ margin: 0, backgroundColor: "#35b729" }}>
                 <Row justify='center' style={{ color: '#fff' }}>
                     <Col xs={0} sm={0} md={24} lg={24} xl={24} xxl={24}>
