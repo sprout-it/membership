@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import '../styles/globals.css'
 import '../styles/Login/Login.css'
 import '../styles/Vertify/Vertify.css'
 import '../styles/Navbar/Navbar.css'
