@@ -10,7 +10,7 @@ const { Header, Content, Footer } = Layout;
 const LayoutComponent = ({ children }) => {
 
     return (
-        <Layout className="navbar-layout">
+        <Layout className="navbar-layout" style={{ overflowX: 'hidden' }} >
             <Row align='middle'>
 
                 <Col xs={7} sm={7} md={{ span: 10, offset: 1 }} xl={{ span: 8 }} xxl={{ span: 7, offset: 1 }}>
@@ -52,7 +52,7 @@ const LayoutComponent = ({ children }) => {
                 </nav>
             </Header>
 
-            <Content style={{ background: '#f7f7f7' }}>
+            <Content style={{ background: '#f7f7f7', padding: 0 }}>
                 {children}
             </Content>
 
