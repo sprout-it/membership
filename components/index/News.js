@@ -102,7 +102,7 @@ const NewsIndex = () => {
                                 }}
                                 cover={
                                     <img
-                                        src={newsState[0].imgUrl}
+                                        src="https://images.unsplash.com/photo-1557234195-bd9f290f0e4d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                                         alt="img"
                                         style={{ minHeight: 250, minWidth: '100%' }}
                                     />
@@ -154,7 +154,7 @@ const NewsIndex = () => {
                                 }}
                                 cover={
                                     <img
-                                        src={newsState[0].imgUrl}
+                                        src="https://images.unsplash.com/photo-1557234195-bd9f290f0e4d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                                         alt="img"
                                         style={{ minHeight: 250, minWidth: '100%' }}
                                     />
@@ -203,7 +203,7 @@ const NewsIndex = () => {
                                 }}
                                 cover={
                                     <img
-                                        src={newsState[0].imgUrl}
+                                        src="https://images.unsplash.com/photo-1557234195-bd9f290f0e4d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                                         alt="img"
                                         style={{ minHeight: 250, minWidth: '100%' }}
                                     />

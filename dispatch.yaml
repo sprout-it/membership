@@ -1,0 +1,10 @@
+dispatch:
+
+  - url: "sprout-membership.appspot.com/*"
+    service: backend
+
+  - url: "sprout-membership.appspot.com/*"
+    service: contract
+
+  - url: "sprout-membership.appspot.com/*"
+    service: default

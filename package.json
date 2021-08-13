@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "node index",
+    "deploy": "yarn build && gcloud app deploy"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -13,6 +14,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "antd": "^4.15.6",
     "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
     "next": "10.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",

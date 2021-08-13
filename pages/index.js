@@ -7,13 +7,11 @@ import Videos from 'components/index/Videos'
 import { Row } from 'antd'
 
 const Index = () => {
-  return <Row gutter={[20, 20]}>
+  return <Row gutter={[0]}>
     <SlideShow />
     <Our />
     <ArticleAndRegisterAE />
-    {/* <Covid /> */}
     <News />
-    <Videos />
   </Row>
 }
 
