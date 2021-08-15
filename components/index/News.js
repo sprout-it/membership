@@ -9,30 +9,28 @@ const NewsIndex = () => {
         wrap={true}
         style={{
             width: '100vw',
-            backgroundRepeat: 'no-repeat',
         }}>
-
-        <Col span={20}>
+        <Col span={20} >
             <Space>
                 <Row justify='center' gutter={[20, 20]} align='top'>
 
                     <CardTemplateImage
-                        title="ข่าว"
-                        description="news name"
+                        title="ตลาดนัด offline"
+                        description="ตลาดนัด offline"
                         bodyUrl="/images/index-mission/1.jpg"
                         timeStamp=""
                     />
 
                     <CardTemplateImage
-                        title="ข่าว"
-                        description="news name"
+                        title="เยี่ยมชมออฟฟิต"
+                        description="เยี่ยมชมออฟฟิต"
                         bodyUrl="/images/index-mission/2.jpg"
                         timeStamp=""
                     />
 
                     <CardTemplateImage
-                        title="ข่าว"
-                        description="news name"
+                        title="ตลาดนัด offline"
+                        description="ตลาดนัด offline"
                         bodyUrl="/images/index-mission/1.jpg"
                         timeStamp=""
                     />

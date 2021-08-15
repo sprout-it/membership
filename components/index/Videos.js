@@ -17,23 +17,20 @@ const Videos = () => {
                 <Row justify='center' gutter={[20, 20]} align='top'>
 
                     <CardTemplateVideo
-                        title="ข่าว"
-                        tag={["ด่วน", "หุ้น", "ข่าวเก่า"]}
-                        description="news name"
+                        title="วีดีโอ1"
+                        description="กิจกรรมตลาดนัด offline"
                         videoUrl="https://storage.googleapis.com/sprout-membership.appspot.com/video1.mp4"
                     />
 
                     <CardTemplateVideo
-                        title="ข่าว"
-                        tag={["ด่วน", "หุ้น", "ข่าวเก่า"]}
-                        description="news name"
+                        title="วีดีโอ2"
+                        description="กิจกรรมเยี่ยมชมออฟฟิต"
                         videoUrl="https://storage.googleapis.com/sprout-membership.appspot.com/video2.mp4"
                     />
 
                     <CardTemplateVideo
-                        title="ข่าว"
-                        tag={["ด่วน", "หุ้น", "ข่าวเก่า"]}
-                        description="news name"
+                        title="วีดีโอ3"
+                        description="ออฟฟิต"
                         videoUrl="https://storage.googleapis.com/sprout-membership.appspot.com/video3.mp4"
                     />
 
