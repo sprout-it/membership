@@ -28,12 +28,18 @@ const Header = () => {
 
                     <div className={collapsed ? `header-section-right` : `header-section-right active`} >
 
-                        <a className='hamburger' onClick={toggleNavbar}>{collapsed ? <GiHamburgerMenu /> : <GrClose />}</a>
-                        <Link href="/"><a onClick={toggleNavbar}>Home</a></Link>
-                        <Link href="/marketing"><a onClick={toggleNavbar}>Marketing</a></Link>
-                        <Link href="/it"><a onClick={toggleNavbar} >IT</a></Link>
-                        <Link href="/logistic"><a onClick={toggleNavbar}>Logistic</a></Link>
-                        <Link href="/financial"><a onClick={toggleNavbar}>Financial</a></Link>
+                        {collapsed
+                            ?
+                            <a className='hamburger' onClick={toggleNavbar}><GiHamburgerMenu /></a>
+                            :
+                            <a className='hamburger' onClick={toggleNavbar}><GrClose /></a>
+                        }
+                        <Link href="/"><a onClick={() => setCollapsed(false)}>Home</a></Link>
+                        <Link href="/marketing"><a onClick={() => setCollapsed(false)}>Marketing</a></Link>
+                        <Link href="/it"><a onClick={() => setCollapsed(false)} >IT</a></Link>
+                        <Link href="/logistic"><a onClick={() => setCollapsed(false)}>Logistic</a></Link>
+                        <Link href="/financial"><a onClick={() => setCollapsed(false)}>Financial</a></Link>
+
 
                     </div>
 
