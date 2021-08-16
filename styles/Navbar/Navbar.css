@@ -1,125 +1,139 @@
-.navbar-layout{
-    min-height: 100vh!important; 
-    padding: 0!important; 
-    margin: 0!important; 
-    background: #fff!important;
-    max-width: 100%!important;
-  }
-  
-  .header{
-    padding: 0!important;
-    margin: 0!important;
-    max-width: 100%!important;
-    height: 70px!important;
-  }
+.logo-img {
+  width: 200px;
+  display: none;
+}
 
-  .login-button{
-    border-radius: 50px!important;
-    margin: 5px!important;
-  }
+.navbar-list {
+  margin: 0;
+  padding: 0 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #23CF48;
+}
 
-  .signup-button{
-    border-radius:50px!important; 
-    border: 0!important; 
-    margin: 5px!important; 
-    background: #35b729!important;
+.header-section-right {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: #23CF48;
+}
+
+.header-section-right>a:not(.hamburger) {
+  width: 100%;
+  display: none;
+}
+
+.header-section-right.active>a {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+a:hover {
+  background: #21C473;
+}
+
+.hamburger {
+  display: block;
+  background: #23CF48;
+  width: 100%;
+  left: 0;
+  padding: 15px;
+}
+
+@media only screen and (min-width: 700px) {
+  .header-section-right {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #23CF48;
   }
-  
-  nav{
-    background: #35b729;
-    height: 100%;
-    width: 100%;
+  .header-section-right>a:not(.hamburger) {
+    display: block;
   }
-  
-  .logo-img{
-    color:white;
-    font-size: 35px;
-    list-style: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-  }
-  
-  nav.navbar ul.navbar-menu{
-    float: right;
-    margin-right:20px;
-  }
-  
-  nav.navbar ul.navbar-menu li{
-    display: inline-block;
-    line-height: 80px;
-    margin: -5px 0px 0px 0px;
-    padding-right: 25px;
-  }
-  
-  nav.navbar ul.navbar-menu li a{
-    color: white;
-    font-size: 17px;
-    text-transform: uppercase;
-  }
-  
-  a.active,a:hover{
-    background: #35b729;
-    transition: .5s;
-  }
-  
-  .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
+  .logo-img {
+    margin: 8px 0 0 0;
+    width: 8.5em;
+    display: block;
     cursor: pointer;
+  }
+  .hamburger {
     display: none;
   }
-  #check{
+  .navbar-list {
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  a {
+    text-decoration: none !important;
+    text-align: center;
+    height: 100%;
+    width: auto;
+    color: #fff !important;
+  }
+  a:hover {
+    height: 100%;
+    background: #21C473;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .header-section-right {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #23CF48;
+  }
+  .header-section-right>a:not(.hamburger) {
+    display: block;
+  }
+  .logo-img {
+    margin: 8px 0 0 0;
+    width: 8.5em;
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger {
     display: none;
   }
-  
-  @media only screen and  (max-width: 952px){
-    label.logo{
-      padding-left: 50px;
-      font-size: 30px;
-    }
-    nav.navbar ul.navbar-menu li a{
-      font-size: 16px;
-    }
+  .navbar-list {
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
   }
-  @media only screen and (max-width: 858px){
-    .checkbtn{
-      display: block;
-    }
-    ul.navbar-menu{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #ffffff;
-      top: 8rem;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-      z-index: 1;
-    }
-    nav.navbar ul.navbar-menu li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav.navbar ul.navbar-menu li a{
-      font-size: 20px;
-      color: black;
-      border-bottom-style: solid;
-      border-bottom-color: #000;
-      border-bottom-width: 1px;
-    }
-    nav.navbar ul.navbar-menu li:hover{
-     opacity: 0.5;
-    }
-    a:hover,a.active{
-      background: none;
-      color: black;
-   
-    }
-    #check:checked ~ ul.navbar-menu{
-      left: 0;
-    }
+  a {
+    text-decoration: none !important;
+    text-align: center;
+    height: 100%;
+    width: auto;
+    color: #fff !important;
   }
+  a:hover {
+    height: 100%;
+    background: #21C473;
+  }
+}
