@@ -16,7 +16,6 @@ const Marketing = () => {
               size="small"
               title="Free"
               extra={<a href="#">More</a>}
-              style={{ width: "100%", height: "500px" }}
             >
               <p>ปรึกษาเรื่องการตลาด</p>
               <p>Sprout Facebook 1 ครั้ง</p>
@@ -26,8 +25,6 @@ const Marketing = () => {
             <Card
               size="small"
               title="3000"
-              extra={<a href="#">More</a>}
-              style={{ width: "100%", height: "500px" }}
             >
               <p>ปรึกษาเรื่องการตลาด</p>
               <p>Sprout Facebook 2 ครั้ง</p>
@@ -44,8 +41,6 @@ const Marketing = () => {
             <Card
               size="small"
               title="6000"
-              extra={<a href="#">More</a>}
-              style={{ width: "100%", height: "500px" }}
             >
               <p>ปรึกษาเรื่องการตลาด</p>
               <p>Sprout Facebook 3 ครั้ง</p>
@@ -65,8 +60,6 @@ const Marketing = () => {
             <Card
               size="small"
               title="9000"
-              extra={<a href="#">More</a>}
-              style={{ width: "100%", height: "500px" }}
             >
               <p>ปรึกษาเรื่องการตลาด</p>
               <p>Sprout Facebook 4 ครั้ง</p>
@@ -91,8 +84,6 @@ const Marketing = () => {
             <Card
               size="small"
               title="12000"
-              extra={<a href="#">More</a>}
-              style={{ width: "100%", height: "500px" }}
             >
               <p>ปรึกษาเรื่องการตลาด</p>
               <p>Sprout Facebook 5 ครั้ง</p>

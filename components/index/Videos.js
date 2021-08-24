@@ -3,13 +3,15 @@ import CardTemplateVideo from './CardTemplateVideo';
 
 const Videos = () => {
 
-    return <Row justify="center"
+    return <Row
+        justify="center"
         gutter={[0, 20]}
         align='top'
         wrap={true}
         style={{
             width: '100vw',
             backgroundRepeat: 'no-repeat',
+            fontFamily: "'Prompt', sans-serif",
         }}>
 
         <Col span={20}>

@@ -35,16 +35,17 @@
   display: block;
 }
 
-a {
+.header-section-right>a {
   text-decoration: none;
   text-align: center;
   width: 100%;
-  padding: 15px;
   color: #fff;
   font-size: 1.5em;
+  white-space: nowrap;
+  padding: 15px;
 }
 
-a:hover {
+.header-section-right>a:hover:not(#register-logo) {
   background: #21C473;
 }
 
@@ -87,14 +88,15 @@ a:hover {
     display: flex;
     flex-flow: row nowrap;
   }
-  a {
+  .header-section-right>a {
     text-decoration: none !important;
     text-align: center;
     height: 100%;
     width: auto;
     color: #fff !important;
+    white-space: nowrap;
   }
-  a:hover {
+  .header-section-right>a:hover:not(#register-logo) {
     height: 100%;
     background: #21C473;
   }
@@ -128,14 +130,15 @@ a:hover {
     display: flex;
     flex-flow: row nowrap;
   }
-  a {
+  .header-section-right>a {
     text-decoration: none !important;
     text-align: center;
-    height: 100%;
-    width: auto;
+    width: 1.8em;
     color: #fff !important;
+    height: 100%;
+    white-space: nowrap;
   }
-  a:hover {
+  .header-section-right>a:hover:not(#register-logo) {
     height: 100%;
     background: #21C473;
   }

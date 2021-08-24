@@ -1,12 +1,37 @@
 import { Form, Input, Row, Button, Card, Divider, Col, Typography } from 'antd'
 import Link from 'next/link'
+import axios from 'axios'
+import getToken from 'utils/getToken'
+import Router from 'next/router'
+import { message } from 'antd'
+import GlobalState from 'utils/GlobalState'
+import { useContext } from 'react'
 
 const Login = () => {
     const form = Form.useForm()
+    const { token, setToken } = useContext(GlobalState)
+
+    const handleLogin = async () => {
+        const token = await getToken
+        // const sendToFinance = await axios.post(`${FINANCE_ENDPOINT}/api/Register/insertRegister`, { ...value, partner_type: "2" }, {
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //         "Authorization": `Bearer ${token.access_token}`
+        //     }
+        // })
+        // if (sendToFinance.status == 200) {
+        message.success('เข้าสู่ระบบสำเร็จ')
+        localStorage.setItem('token', JSON.stringify({ token: "1234" }))
+        setToken({ token: "1234" })
+        Router.push('/')
+        // }
+        // else message.error('Username หรือรหัสผ่านผิดพลาด')
+
+    }
 
     return (
         <Row justify='center'>
-            
+
             <Col xs={0} sm={0} md={0} lg={0} xl={12} xxl={12}>
                 <Row justify='center' align='middle' style={{ minHeight: '100vh' }}>
                     <img src="/images/key-logo.svg" alt="key-logo" width={500} height={500} />
@@ -17,7 +42,7 @@ const Login = () => {
                 <Card style={{ padding: 10, minHeight: '100vh' }}>
                     <Row justify='center' align="middle" style={{ minHeight: '100vh' }}>
                         <Col xs={24} sm={22} md={18} lg={16} xl={16} xxl={12}>
-                            <Form ref={form}>
+                            <Form ref={form} onFinish={handleLogin}>
                                 <Row justify='center'>
                                     <img src="/images/sprout-logo.svg" width='100%' alt="sprout" />
                                 </Row>
@@ -41,23 +66,25 @@ const Login = () => {
                                     label=' '
                                     labelCol={{ span: 24 }}
                                 >
-                                    <Button style={{
-                                        borderRadius: 50,
-                                        width: '100%',
-                                        height: '40px',
-                                        background: '#1BB61D',
-                                        color: '#fff'
-                                    }}>
+                                    <Button
+                                        htmlType='submit'
+                                        style={{
+                                            borderRadius: 50,
+                                            width: '100%',
+                                            height: '40px',
+                                            background: '#1BB61D',
+                                            color: '#fff'
+                                        }}>
                                         Login
                                     </Button>
                                 </Form.Item>
 
                                 <Divider />
 
-                                <Row justify='space-between'  style={{ paddingBottom: 15 }}>
+                                <Row justify='space-between' style={{ paddingBottom: 15 }}>
                                     <Col xs={13} sm={12} md={12} xl={12} xxl={12}>
                                         <Row justify='start'>
-                                            <Typography.Text style={{ textAlign: 'center'}}>
+                                            <Typography.Text style={{ textAlign: 'center' }}>
                                                 {`Don't have an account? `}
                                                 <Link href='/register'>
                                                     <a>Sign up</a>
@@ -74,7 +101,7 @@ const Login = () => {
                                     </Col>
                                 </Row>
 
-                                <Form.Item>
+                                {/* <Form.Item>
                                     <Button icon={
                                         <img
                                             style={{ margin: 2.5 }}
@@ -91,7 +118,7 @@ const Login = () => {
                                             justifyContent: 'center',
                                             width: '100%',
                                             height: '40px',
-                                            alignItems:'center'
+                                            alignItems: 'center'
                                         }}>
                                         Login with your Facebook account
                                     </Button>
@@ -108,11 +135,11 @@ const Login = () => {
                                             justifyContent: 'center',
                                             marginTop: 10,
                                             height: '40px',
-                                            alignItems:'center'
+                                            alignItems: 'center'
                                         }} >
                                         Login with your Google account
                                     </Button>
-                                </Form.Item>
+                                </Form.Item> */}
                             </Form>
                         </Col>
                     </Row>
@@ -122,4 +149,16 @@ const Login = () => {
     )
 }
 
+// export const getServerSideProps = ({ req, res }) => {
+//     console.log(req.cookies)
+
+//     // res.writeHead(301, { Location: "/register" })
+//     // res.end()
+
+//     // return {
+//     //     props: {
+
+//     //     }
+//     // }
+// }
 export default Login

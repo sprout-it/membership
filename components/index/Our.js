@@ -7,8 +7,9 @@ const Our = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             width: "100vw",
-            height: 600
-        }}>
+            height: 600,
+        }}
+        >
             <Row justify='center' align='middle' style={{
                 height: '100%',
                 background: '#444',
@@ -18,20 +19,37 @@ const Our = () => {
                 width: '100%',
             }}>
                 <Col span={24} >
-                    <Col span={24} >
-                        <Row justify='center'>
-                            <Typography.Title style={{ color: '#fff', fontSize: 50, zIndex: 1 }}>เราคือใคร Our Vision & Mission</Typography.Title>
-                        </Row>
-                    </Col>
-                    <Col span={24} >
-                        <Row justify='center'>
-                            <Typography.Text style={{ color: 'white', fontSize: 24, zIndex: 1, textOverflow: 'ellipsis' }}>
-                                เราต้องการนำแนวคิดที่ดีที่สุดจากความคิดเดิม และปรับใช้ใหม่ให้เหมาะกับวิถีชีวิตสมัยใหม่
-                                เราต้องการทำสิ่งนี้ในแบบที่จำกัดความเสียหายสำหรับอนาคตต่อโลกของเรา
-                                ปรับปรุงสภาพแวดล้อมความเป็นอยู่ และให้ผลตอบแทนที่เป็นธรรมสำหรับงานประจำวันที่ยุติธรรม
-                            </Typography.Text>
-                        </Row>
-                    </Col>
+                    <Row justify='center'>
+                        <Col span={24} >
+                            <Row justify='center'>
+                                <Typography.Title
+                                    style={{
+                                        fontFamily: "'Prompt', sans-serif",
+                                        color: '#fff',
+                                        fontSize: 50,
+                                        zIndex: 1
+                                    }}>เราคือใคร Our Vision & Mission</Typography.Title>
+                            </Row>
+                        </Col>
+                        <Col xs={24} sm={24} md={20} lg={18} xl={16} xxl={14}>
+                            <Row justify='center'>
+                                <Typography.Text
+                                    className="main-font"
+                                    style={{
+                                        fontFamily: "'Prompt', sans-serif",
+                                        color: 'white',
+                                        fontSize: "1.5em",
+                                        zIndex: 1,
+                                        textOverflow: 'ellipsis',
+                                        textAlign: 'center'
+                                    }}>
+                                    เราต้องการนำแนวคิดที่ดีที่สุดจากความคิดเดิม และปรับใช้ใหม่ให้เหมาะกับวิถีชีวิตสมัยใหม่
+                                    เราต้องการทำสิ่งนี้ในแบบที่จำกัดความเสียหายสำหรับอนาคตต่อโลกของเรา
+                                    ปรับปรุงสภาพแวดล้อมความเป็นอยู่ และให้ผลตอบแทนที่เป็นธรรมสำหรับงานประจำวันที่ยุติธรรม
+                                </Typography.Text>
+                            </Row>
+                        </Col>
+                    </Row>
 
                 </Col>
 

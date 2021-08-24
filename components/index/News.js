@@ -12,7 +12,7 @@ const NewsIndex = () => {
         }}>
         <Col span={20} >
             <Space>
-                <Row justify='center' gutter={[20, 20]} align='top'>
+                <Row justify='center' gutter={[20, 20]} align='top' style={{ fontFamily: "'Prompt', sans-serif", }}>
 
                     <CardTemplateImage
                         title="ตลาดนัด offline"
